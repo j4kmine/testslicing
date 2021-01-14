@@ -1,0 +1,13 @@
+.list-group {
+	.list-group-item {
+		&:first-child {
+			border-radius: 0;
+		}
+		&:last-child {
+			border-radius: 0;
+		}
+		&:nth-child(even) {
+			background-color: #f7f7f7;
+		}
+	}
+}

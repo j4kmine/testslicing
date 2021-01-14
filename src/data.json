@@ -1,0 +1,13 @@
+{
+  "navItems" : [
+    {
+      "menu_item" : "Home"
+    },
+    {
+      "menu_item" : "About"
+    },
+    {
+      "menu_item" : "Contact"
+    }
+  ]
+}

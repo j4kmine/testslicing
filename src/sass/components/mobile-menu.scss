@@ -1,0 +1,95 @@
+.mobile-menu {
+    @media(max-width: 1024px) {
+        display: block;
+        width: 280px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -280px;
+        z-index: 99;
+        background-color: white !important;
+        @include transition(linear all 400ms);
+        overflow-y: auto;
+     }
+    .navbar-nav {
+        @media(max-width: 1024px) {
+            width: 100%;
+            height: auto;
+            flex-direction: inherit;
+            margin-bottom: 0;
+            margin-top: 40px;
+            margin-right: 0;
+            padding: 0 0;
+        }
+        li {
+            @media(max-width: 1024px) {
+                display: block;
+                margin-right: 0;
+                margin-top: 10px;
+            }
+            a {
+                @media(max-width: 1024px) {
+                    display: block;
+                    padding: 10px 20px;
+                }
+            }
+            [data-toggle="modal"] {
+                @media(max-width: 1024px) {
+                    display: none;
+                }
+            }
+        }
+        .navbar-item {
+            @media(max-width: 1024px) {
+                padding-left: 15px;
+            }
+            &:last-child {
+                @media(max-width: 1024px) {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+.navbar {
+    @media(max-width: 1024px) {
+        background-color: white !important;
+        padding: 0 0;
+    }
+    .js-mobile-button {
+        @media(max-width: 1024px) {
+            display: block !important;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            @include translateY(-50%);
+            padding: 4px;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}
+.content-area {
+    @media(max-width: 1024px) {
+        margin-left: 0;
+    }
+}
+
+.navbar-brand {
+    @media(max-width: 1024px) {
+        width: auto;
+        text-align: left;
+        background-color: white !important;
+        padding: 0;
+    }
+}
+body {
+    &.open {
+        .mobile-menu {
+            @include transition(linear all 400ms);
+            right: 0;
+        }
+    }
+}
+

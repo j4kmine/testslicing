@@ -1,0 +1,57 @@
+@mixin bg-gradient($from, $to) {
+	background: $from;
+	background: linear-gradient(90deg, $from 0%, $to 100%);
+}
+
+@mixin translate($x,$y) {
+    -webkit-transform: translate($x, $y);
+    -o-transform: translate($x, $y);
+    transform: translate($x, $y);
+}
+
+@mixin translateX($x) {
+    -webkit-transform: translateX($x);
+    -ms-transform: translateX($x);
+    -o-transform: translateX($x);
+    transform: translateX($x);
+}
+
+@mixin translateY($y) {
+    -webkit-transform: translateY($y);
+    -ms-transform: translateY($y);
+    -o-transform: translateY($y);
+    transform: translateY($y);
+}
+
+@mixin gray-scale($value:100%) {
+    filter: grayscale($value);
+    -webkit-filter: grayscale($value);
+    -moz-filter: grayscale($value);
+    -ms-filter: grayscale($value);
+    -o-filter: grayscale($value);
+}
+
+@mixin rotate($x) {
+    -webkit-transform: rotate($x);
+    -moz-transform: rotate($x);
+    -o-transform: rotate($x);
+    transform: rotate($x);
+}
+
+@mixin translate-scale($y, $x, $s) {
+  -webkit-transform: translate($y, $x) scale($s);
+  -moz-transform: translate($y, $x) scale($s);
+  -o-transform: translate($y, $x) scale($s);
+  transform: translate($y, $x) scale($s);
+}
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}

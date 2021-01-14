@@ -1,0 +1,15 @@
+.btn {
+	&.rounded {
+		border-radius: 100px !important;
+	}
+	&[class*="btn-outline-"] {
+		border-width: 2px;
+	}
+	&.btn-lg {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	&:focus {
+		box-shadow: none;
+	}
+}

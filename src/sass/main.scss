@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400;300&family=Roboto:wght@300;400;500;700&display=swap');
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-size-base: 14;
+// navbar
+$navbar-padding-y: 12px;
+$navbar-padding-x:	22px;
+// buttons
+$btn-padding-y: 8px;
+$btn-padding-x: 20px;
+$btn-border-radius: 3px;
+$btn-font-weight: 500;
+$border-radius: 3px;
+//type
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 700;
+$headings-color: #000000;
+// theme colors
+$primary: #1d8fee;
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary":    $primary
+  ),
+  $theme-colors
+);
+$jumbotron-padding:                 40px !default;
+$jumbotron-bg:                      #ffffff !default;
+
+// Option B: Include parts of Bootstrap
+
+
+// Required
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+
+// pages
+@import "mymixin";
+@import "myvariables";
+
+// components
+@import "global";
+@import "components/header";
+@import "components/mobile-menu";
+@import "components/footer";
+@import "components/button";
+@import "components/text";
+@import "components/jumbotron";
+@import "components/list-group";
+@import "index";
